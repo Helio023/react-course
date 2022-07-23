@@ -1,0 +1,23 @@
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  &__back,
+  &__next {
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $gray;
+    outline: none;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: $gray-100;
+      color: $gray;
+      cursor: auto;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin linkStyles {
+  background-color: $gray-100;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $pink;
+  }
+}

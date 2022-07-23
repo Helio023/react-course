@@ -1,0 +1,33 @@
+.topbar {
+  padding: 20px 10px;
+  border-radius: 3px;
+  background-color: $white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+
+  &__hamburguer {
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 650px) {
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__link {
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
